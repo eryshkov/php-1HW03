@@ -1,8 +1,10 @@
 <?php
 
-const URL_TO_IMAGES_FOLDER = '/02/img/';
-const PATH_TO_IMAGES_FOLDER = __DIR__ . '/img/';
-const IMAGES = [1 => 'image_1s.jpg', 'image_2s.jpg', 'image_3s.jpg',];
+$constants = include __DIR__ . '/constants.php';
+
+$images = $constants['images'];
+$pathToImagesFolder = $constants['pathToImagesFolder'];
+$urlToImagesFolder = $constants['urlToImagesFolder'];
 
 ?>
 <!doctype html>
@@ -26,12 +28,12 @@ const IMAGES = [1 => 'image_1s.jpg', 'image_2s.jpg', 'image_3s.jpg',];
         <!--            <a href="/02/image.php?id=1"><img src="/02/img/image_1.jpg" width="1920" height="1200"></a>-->
         <!--        </div>-->
         <?php
-        foreach (IMAGES as $id => $imageName) {
+        foreach ($images as $id => $imageName) {
             ?>
             <?php echo PHP_EOL; ?>
             <div class="col"><?php echo PHP_EOL;
-                $imagePath = PATH_TO_IMAGES_FOLDER . $imageName;
-                $imageURL = URL_TO_IMAGES_FOLDER . $imageName;
+                $imagePath = $pathToImagesFolder . $imageName;
+                $imageURL = $urlToImagesFolder . $imageName;
                 ?>
                 <a href="/02/image.php?id=<?php echo $id; ?>"><img
                             src="<?php echo $imageURL; ?>" <?php echo getimagesize($imagePath)[3]; ?>></a><?php echo PHP_EOL; ?>
