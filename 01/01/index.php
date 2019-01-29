@@ -12,7 +12,7 @@
     Home Work 03.01
 </h1>
 
-<form method="GET" action="/01/result.php">
+<form method="GET" action="/01/01/result.php">
     <input type="text" name="firstNumber" placeholder="Первое число">
     <select name="operation">
         <option value="plus"> +</option>
