@@ -13,7 +13,7 @@ function calculate($num1, $num2, $operation)
             $result = $num1 * $num2;
             break;
         case DIVISION:
-            $result = $num1 / $num2;
+            $result = (0 !== $num2) ? $num1 / $num2 : 'division by zero';
             break;
         default:
             $result = null;

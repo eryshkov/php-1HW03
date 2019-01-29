@@ -1,3 +1,6 @@
+<?php
+include __DIR__ . '/constants.php';
+?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -15,10 +18,10 @@
 <form method="GET" action="/01/01/result.php">
     <input type="text" name="firstNumber" placeholder="Первое число">
     <select name="operation">
-        <option value="plus"> +</option>
-        <option value="minus"> -</option>
-        <option value="multiply"> x</option>
-        <option value="division"> /</option>
+        <option value="<?php echo PLUS?>"> +</option>
+        <option value="<?php echo MINUS?>"> -</option>
+        <option value="<?php echo MULTIPLY?>"> x</option>
+        <option value="<?php echo DIVISION?>"> /</option>
     </select>
     <input type="text" name="secondNumber" placeholder="Второе число">
     <input type="submit" value=" = ">

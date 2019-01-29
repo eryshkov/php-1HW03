@@ -9,6 +9,8 @@
 </head>
 <body>
 <?php
+include __DIR__ . '/constants.php';
+
 $num1 = $_GET['firstNumber'];
 $num1 = (int)$num1;
 
@@ -18,20 +20,20 @@ $num2 = (int)$num2;
 $operation = $_GET['operation'];
 
 switch ($operation) {
-    case 'plus':
+    case PLUS:
         $result = $num1 + $num2;
         $output = ' + ';
         break;
-    case 'minus':
+    case MINUS:
         $result = $num1 - $num2;
         $output = ' - ';
         break;
-    case 'multiply':
+    case MULTIPLY:
         $result = $num1 * $num2;
         $output = ' x ';
         break;
-    case 'division':
-        $result = $num1 / $num2;
+    case DIVISION:
+        $result = (0 !== $num2) ? $num1 / $num2 : 'division by zero';
         $output = ' / ';
         break;
     default:
