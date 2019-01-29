@@ -14,7 +14,8 @@
 * код к каждому заданию находится в папке под номером, который соответствует номеру задания
 
 ## Main functionality
-
+* uses `getimagesize`
+* uses `array`
 
 ## Credits
 * thanks to **Albert Stepantsev** and to his [awesome school](https://pr-of-it.ru/courses/php-1.html)
