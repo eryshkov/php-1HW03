@@ -24,9 +24,6 @@ $urlToImagesFolder = $constants['urlToImagesFolder'];
 <div class="container">
     <p></p>
     <div class="row">
-        <!--        <div class="col">-->
-        <!--            <a href="/02/image.php?id=1"><img src="/02/img/image_1.jpg" width="1920" height="1200"></a>-->
-        <!--        </div>-->
         <?php
         foreach ($images as $id => $imageName) {
             ?>
