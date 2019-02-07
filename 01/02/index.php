@@ -49,18 +49,10 @@ $result = calculate($num1, $num2, $operation);
                 <input type="text" name="firstNumber" placeholder="Первое число"
                        value="<?php echo 0 === $num1 ? '' : $num1; ?>">
                 <select name="operation">
-                    <option value="plus"
-                        <?php echo selectThis($operation, PLUS) ?>> +
-                    </option>
-                    <option value="minus"
-                        <?php echo selectThis($operation, MINUS) ?>> -
-                    </option>
-                    <option value="multiply"
-                        <?php echo selectThis($operation, MULTIPLY) ?>> x
-                    </option>
-                    <option value="division"
-                        <?php echo selectThis($operation, DIVISION) ?>> /
-                    </option>
+                    <option value="plus" <?php echo selectThis($operation, PLUS) ?>> +</option>
+                    <option value="minus" <?php echo selectThis($operation, MINUS) ?>> -</option>
+                    <option value="multiply" <?php echo selectThis($operation, MULTIPLY) ?>> x</option>
+                    <option value="division" <?php echo selectThis($operation, DIVISION) ?>> /</option>
                 </select>
                 <input type="text" name="secondNumber" placeholder="Второе число"
                        value="<?php echo 0 === $num2 ? '' : $num2; ?>">

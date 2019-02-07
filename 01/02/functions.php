@@ -29,7 +29,7 @@ function calculate($num1, $num2, $operation)
 function selectThis($operation, $as)
 {
     if ($as === $operation) {
-        return ' selected="selected"';
+        return 'selected';
     }
 
     return null;
